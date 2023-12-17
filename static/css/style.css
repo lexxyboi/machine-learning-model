@@ -1,0 +1,62 @@
+body {
+    background-image: url('/static/img/employee.jpg');
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-top: 30%;
+    margin-bottom: 5%;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#res {
+    margin-left: 3%;
+    text-align: center; /* Center the text inside #res */
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.alert {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the alert box horizontally */
+}
+
+
