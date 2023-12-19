@@ -1,7 +1,7 @@
 body {
-    background-image: url('/static/img/btc.jpg');
+    background-image: url('/static/img/white2.jpg');
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e8e8e8;
     margin: 0;
     padding: 0;
     display: flex;
@@ -36,13 +36,23 @@ select {
 }
 
 button {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #ffffff;
+    color: #007BFF;
     padding: 10px;
-    border: none;
+    border: 2px solid #007BFF;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+    border-color: #007BFF;
 }
 
 #res {
@@ -59,4 +69,29 @@ button {
     margin: 0 auto; /* Center the alert box horizontally */
 }
 
+.navbar {
+    background-color: #ffffff; /* White background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 10px; /* Add padding if needed */
+}
+
+/* Optional: Customize other styles as needed */
+.navbar a {
+    color: #000000; /* Black text color for links */
+}
+
+.navbar a:hover{
+    color: #0400ff; /* Black text color for links */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.bi-coin {
+    margin-right: 10px;
+}
 

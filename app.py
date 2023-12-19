@@ -3,9 +3,6 @@ import pandas as pd
 from flask import Flask, render_template, request
 import pickle
 from werkzeug.utils import redirect
-from flask_mysqldb import MySQL
-import matplotlib.pyplot as plt
-from io import BytesIO
 import base64
 import sweetviz as sv
 
@@ -60,7 +57,7 @@ def predict_employee():
     predicted_class = predict_employee_class(features)
 
     # Map predicted class to human-readable labels
-    class_labels = {1: 'Leave', 0: 'Not'}
+    class_labels = {0: 'Leave', 1: 'Not'}
     predicted_label = class_labels.get(predicted_class, 'unknown')
 
     return render_template('index.html', prediction=predicted_label)
@@ -120,14 +117,14 @@ def predict_bitcoin():
 # report2 = sv.compare([data2, 'Bitcoin Price Data'], [data1, 'Employee Data'])
 
 
-# @app.route('/eda')
+# @app.route('/viz')
 # def eda():
-#    return render_template('eda.html', report_html=report.show_html())
+#    return render_template('viz.html', report_html=report.show_html())
 
 
-# @app.route('/eda2')
+# @app.route('/viz2')
 # def eda2():
-#    return render_template('eda2.html', report2_html=report2.show_html())
+#    return render_template('viz.html', report2_html=report2.show_html())
 
 
 if __name__ == '__main__':
